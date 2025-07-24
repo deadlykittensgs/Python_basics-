@@ -36,6 +36,35 @@ while count < 10:
   print(f"here is a formated string {fruits[0]}")
   count = count + 1  
 
+# Lists (arays in Python)
+
+my_list = [1, 2, 3, 4, 5]
+
+# Dictionary syntax
+
+my_dict = {
+    "name": "Ryan",
+    "age": 25,
+    "is_student": False
+}
+
+# Access data in a dictionary
+
+print(my_dict["name"])   # Output: Ryan
+
+
+# use get to avoid null errors 
+print(my_dict.get("email"))  # Output: None
+
+
+my_dict["age"] = 26             # Update value
+my_dict["email"] = "a@b.com"    # Add new key-value pair
+del my_dict["is_student"]       # Remove a key
+
+for key, value in my_dict.items():
+    print(f"{key}: {value}")
+
+
 # Basic funtions included in the language 
 
 
